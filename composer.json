@@ -1,0 +1,27 @@
+{
+    "name": "dindigital/dinsocial",
+    "description": "Biblioteca para gerenciamento de autenticação em redes sociais persistindo para uso integrado em painel de controle",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Mário Mello",
+            "email": "mario@dindigital.com"
+        }
+    ],
+    "require": {
+        "league/oauth2-client": "1.*",
+        "league/oauth2-facebook": "^1.4",
+        "league/oauth2-google": "^1.0",
+        "facebook/graph-sdk": "^5.3",
+        "google/apiclient": "^2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.0.*",
+        "vlucas/phpdotenv": "^2.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "dinsocial\\": "src/dinsocial/"
+        }
+    }
+}
