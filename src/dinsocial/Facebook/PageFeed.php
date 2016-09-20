@@ -36,7 +36,13 @@ class PageFeed
     $linkData = [
       'link' => $url,
       'message' => $message,
+      'name' => $name,
+      'description' => $description,
     ];
+
+    if ($picture) {
+      $linkData['picture'] = $picture;
+    }
 
     try {
 
