@@ -30,7 +30,7 @@ class YouTube
         $snippet->setTitle($title);
         $snippet->setDescription($description);
         if (count($tags)) {
-            $snippet->setTags($tags['tags']);
+            $snippet->setTags($tags);
         }
         $status = new Google_Service_YouTube_VideoStatus();
         $status->privacyStatus = $privacy;
